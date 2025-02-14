@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff6b6b;
+  margin-top: 20px;
+}
+
+.player-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#vinyl-container {
+  display: inline-block;
+  margin-top: 50px;
+  position: relative;
+}
+
+svg {
+  padding-top: 100px;
+  max-height: 30vh;
+  width: 100%;
+}
+
+.parent {
+  position: relative;
+}
+.butterfly-image {
+  top: 30px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+}
+.button-group {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+#next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(194, 13, 73);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#play-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #d24a89;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#play-button:hover {
+  background-color: #ff3b3b;
+}
+
+/* .player-container svg {
+  width: 1000px;
+} */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 4s linear infinite;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px red solid;
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px green solid;
+}
